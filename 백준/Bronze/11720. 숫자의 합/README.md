@@ -1,5 +1,10 @@
 # [Bronze IV] 숫자의 합 - 11720 
 
+### Point
+
+ <p>getBytes() 메소드를 통해 문자열을 바이트 배열화 하여 -'0'으로 정수 취급하여 계산
+ charAt()보다 빨랐음</p>
+
 [문제 링크](https://www.acmicpc.net/problem/11720) 
 
 ### 성능 요약
