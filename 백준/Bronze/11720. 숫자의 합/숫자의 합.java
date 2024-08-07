@@ -7,9 +7,8 @@ public class Main{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int sum = 0;
         int n = Integer.parseInt(br.readLine());
-        String num = br.readLine();
-        for (int i = 0; i < n; i++) {
-            sum += (num.charAt(i)-48);
+        for (byte value : br.readLine().getBytes()) {
+            sum += (value - '0');
         }
         System.out.print(sum);
     }
