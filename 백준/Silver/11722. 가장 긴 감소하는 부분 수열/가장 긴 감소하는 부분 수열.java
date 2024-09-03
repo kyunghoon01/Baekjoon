@@ -16,7 +16,7 @@ public class Main{
         }
         
         // DP 배열 초기화
-        for (int i = 0; i < n; i++) {
+        for (int i= 0; i < n; i++) {
             dp[i] = 1;
         }
 
