@@ -7,24 +7,22 @@ public class Main{
 
     static BufferedReader br;
     static StringBuilder sb;
-    static int[] arr;
+    static boolean[] arr;
     static int N;
-
     public static void main(String[] args) throws IOException {
         br = new BufferedReader(new InputStreamReader(System.in));
         sb = new StringBuilder();
         N = Integer.parseInt(br.readLine());
-        arr = new int[N];
+        arr = new boolean[2_000_001];
 
         for (int i = 0; i < N; i++) {
-            arr[i] = Integer.parseInt(br.readLine());
+            arr[Integer.parseInt(br.readLine()) + 1_000_000] = true;
         }
 
-
-        Arrays.sort(arr);
-
-        for (int i = 0; i < N; i++) {
-            sb.append(arr[i]).append('\n');
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]) {
+                sb.append(i - 1_000_000).append('\n');
+            }
         }
 
         System.out.println(sb);
